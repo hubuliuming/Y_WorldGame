@@ -6,13 +6,13 @@
     功能：Game Entry
 *****************************************************/
 
-using UnityEngine;
 using YFramework;
 
 public class Game : Architecture<Game>
 {
     protected override void Init()
     {
-        
+        RegisterModel<PlayerModel>(new PlayerModel());
+        RegisterSystem(new TestSystem());
     }
 }
